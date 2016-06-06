@@ -1,0 +1,16 @@
+{
+  "name": "angular-automation-exercises",
+  "description": "A sample AngularJS project to verify unit and end to end test skills",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sayorbasu/AngularAutomationExercise",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.5.5",
+    "angular-route": "~1.5.5",
+    "angular-loader": "~1.5.5",
+    "angular-mocks": "~1.5.5",
+    "html5-boilerplate": "^5.3.0",
+    "angular-messages": "1.5.5"
+  }
+}

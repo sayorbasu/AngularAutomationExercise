@@ -1,0 +1,15 @@
+<div ng-controller="DeferredLoadingCtrl as ctrl" ng-cloak="" class="virtualRepeatdemoDeferredLoading">
+    <h1>Scolling List Exercise</h1>
+    <md-content layout="column">
+        <p>
+            Display a list of 50,000 items that load on demand in a viewport of only 7 rows.
+        </p>
+
+        <md-virtual-repeat-container id="vertical-container">
+            <div md-virtual-repeat="item in ctrl.dynamicItems" md-on-demand="" class="repeated-item" flex="">
+                {{item}}
+            </div>
+        </md-virtual-repeat-container>
+    </md-content>
+
+</div>
