@@ -5,39 +5,12 @@
 describe('automation exercises app', function() {
 
 
-  it('getting started page should have app heading', function() {
+  it('should have a heading', function() {
+    browser.driver.manage().deleteAllCookies();
+    browser.ignoreSynchronization = false;
     browser.get('index.html#/gettingstarted');
-    
-    //expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    var heading = element(by.id('header'));
+    var headingText = heading.getText();
+    expect(headingText).toBe("Test Automation Exercises");
   });
-
-
-/*  describe('view1', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#!/view1');
-    });
-
-
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
-    });
-
-  });
-
-
-  describe('view2', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#!/view2');
-    });
-
-
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
-    });
-
-  });*/
 });
