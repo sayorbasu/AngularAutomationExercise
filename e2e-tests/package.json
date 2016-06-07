@@ -1,0 +1,29 @@
+{
+  "name": "AngularAutomationExercise-E2ETests",
+  "version": "0.0.0",
+  "description": "Frontend tests written in typescript using protractor and jasmine-given.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "del": "^2.0.0",
+    "es6-promise": "^3.0.2",
+    "gulp": "^3.9.0",
+    "gulp-protractor": "^1.0.0",
+    "gulp-shell": "^0.4.3",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "jasmine": "^2.3.4",
+    "jasmine-spec-reporter": "^2.4.0",
+    "lodash": "^3.10.1",
+    "protractor": "^2.2.0",
+    "protractor-jasmine2-screenshot-reporter": "^0.2.0",
+    "q": "^1.4.1",
+    "request": "^2.65.0",
+    "tsd": "^0.6.4",
+    "tslint": "^3.3.0",
+    "typescript": "^1.7.5",
+    "yargs": "^3.27.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
