@@ -2,18 +2,33 @@
 /// <reference path='../typings/tsd/jasmine/jasmine.d.ts' />
 /// <reference path='../typings/custom/angular-protractor.d.ts' />
 
-import AlertDialog from '../page_objects/alertDialog.page';
-import AlertDialogImpl from '../page_objects/alertDialog.page.impl';
+import DialogExercise from '../page_objects/dialogexercise.page';
+import DialogExerciseImpl from '../page_objects/DialogExercise.page.impl';
+import JbrandProduct from '../page_objects/jbrandProduct.page'; 
+import JbrandProductImpl from '../page_objects/jbrandProduct.page.impl'; 
 
-const alertDialog: AlertDialog = new AlertDialogImpl;
+const dialogExercise: DialogExercise = new DialogExerciseImpl;
+const jbrandProductPage: JbrandProduct = new JbrandProductImpl;
 
 
-describe('click alert dialog', function() {
+xdescribe('click alert dialog', function() {
 
-  it('should have a heading', function() {
+  xit('click alert dialog box', function() {
     console.log("HI!");
-    browser.get('http://localhost:8000/#/exercise1/partA');
     browser.ignoreSynchronization = true;
-    alertDialog.clickDialog();
+    dialogExercise.open();
+    dialogExercise.clickDialog();
   });
+  
 });
+  
+  
+  describe('J Brand tests', function() {
+    
+    it('click color swatch and check that image on page changes', function() {
+      jbrandProductPage.open();
+   });
+  
+});
+  
+
