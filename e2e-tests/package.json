@@ -1,7 +1,9 @@
 {
-  "name": "E2E Tests",
+  "name": "E2ETests",
   "version": "0.0.0",
   "description": "End-to-End tests with Page Object model in TypeScript",
+  "repository": "https://github.com/sayorbasu/AngularAutomationExercise",
+  "license": "MIT",
   "main": "gulpfile.js",
   "devDependencies": {
     "bower": "^1.7.7",
