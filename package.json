@@ -2,7 +2,7 @@
   "name": "AngularAutomationExercise",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
+  "description": "A exercise in AngularJS end-to-end test automation",
   "repository": "https://github.com/sayorbasu/AngularAutomationExercise",
   "license": "MIT",
   "devDependencies": {

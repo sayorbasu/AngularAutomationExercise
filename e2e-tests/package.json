@@ -1,9 +1,10 @@
 {
-  "name": "typescriptdemo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "E2E Tests",
+  "version": "0.0.0",
+  "description": "End-to-End tests with Page Object model in TypeScript",
   "main": "gulpfile.js",
-  "dependencies": {
+  "devDependencies": {
+    "bower": "^1.7.7",
     "del": "^2.0.0",
     "es6-promise": "^3.0.2",
     "gulp": "^3.9.1",
@@ -11,14 +12,18 @@
     "gulp-shell": "^0.4.3",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.9.2",
-    "protractor": "^2.2.0"
+    "protractor": "^2.2.0",
+    "gulp-tsc": "^1.1.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "bower install",
+    "prestart": "npm install",
+    "pretest": "npm install",
+    "test": "gulp test"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp-tsc": "^1.1.4"
+
   }
 }
