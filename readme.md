@@ -1,1 +1,1 @@
-Angular Automation Exercise Version 1.0
+Angular Automation Exercise Version 1.0.0
